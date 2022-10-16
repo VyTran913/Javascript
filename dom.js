@@ -73,18 +73,81 @@
 // thirdItem.style.backgroundColor = 'grey';
 
 //QUERY SELECTORALL//
-var titles = document.querySelectorAll('.title');
+//var titles = document.querySelectorAll('.title');
 
-console.log(titles);
-titles[0].textContent = 'Hello';
+//console.log(titles);
+//titles[0].textContent = 'Hello';
 
-var odd = document.querySelectorAll('li:nth-child(odd)');
-for (var i = 0; i < odd.length; i++)
-  odd[i].style.backgroundColor = 'lightgrey';
+// var odd = document.querySelectorAll('li:nth-child(odd)');
+// for (var i = 0; i < odd.length; i++)
+//   odd[i].style.backgroundColor = 'lightgrey';
 
-var even = document.querySelectorAll('li:nth-child(even)');
-for (var i = 0; i < even.length; i++)
-  even[i].style.color = 'violet';
+// var even = document.querySelectorAll('li:nth-child(even)');
+// for (var i = 0; i < even.length; i++)
+//   even[i].style.color = 'violet';
+
+//var even = document.querySelectorAll('li:nth-child(even)');
+//for (var i = 0; i < even.length; i++)
+// even[i].style.backgroundColor = 'lightblue';//
+
+//TRAVESING THE DOM//
+var itemlist = document.querySelector('#items'); //parentNode
+// console.log(itemlist.parentNode);
+// itemlist.parentNode.style.backgroundColor = "#f4f4f4";
+// console.log(itemlist.parentNode.parentNode);
+// console.log(itemlist.parentNode.parentNode.parentNode);
+
+// console.log(itemlist.parentElement);  //parentElement
+// itemlist.parentElement.style.backgroundColor = 'lightgreen';
+// console.log(itemlist.parentElement.parentElement);
+// console.log(itemlist.parentElement.parentElement.parentElement);
+
+//most of the case parentNode and parentElement can used as the same.
+
+//childNodes
+//console.log(itemlist.childNodes);
+//in childNodes line break counts as text
+//console.log(itemlist.children);
+// console.log(itemlist.children[2]);
+// itemlist.children[2].style.backgroundColor = 'yellow';
+// itemlist.children[2].style.color = 'red';
+// console.log(itemlist.children[1]);
+// itemlist.children[1].style.backgroundColor = 'lightblue';
+// itemlist.children[1].style.color = 'darkviolet';
+
+//firstChild
+//console.log(itemlist.firstChild);
+
+//firstElementChild
+// console.log(itemlist.firstElementChild);
+// itemlist.firstElementChild.textContent = 'I love you';
+// itemlist.firstElementChild.style.color = 'red';
+
+//lastChild
+//console.log(itemlist.lastChild);
+
+//lastElementChild
+// console.log(itemlist.lastElementChild);
+// itemlist.lastElementChild.textContent = '3 Options';
+// itemlist.lastElementChild.style.fontweight = 'Bold';
+// itemlist.lastElementChild.style.color = "darkgrey";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
