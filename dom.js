@@ -105,9 +105,9 @@ var itemlist = document.querySelector('#items'); //parentNode
 //most of the case parentNode and parentElement can used as the same.
 
 //childNodes
-//console.log(itemlist.childNodes);
-//in childNodes line break counts as text
-//console.log(itemlist.children);
+// console.log(itemlist.childNodes);
+// //in childNodes line break counts as text
+// console.log(itemlist.children);
 // console.log(itemlist.children[2]);
 // itemlist.children[2].style.backgroundColor = 'yellow';
 // itemlist.children[2].style.color = 'red';
@@ -131,6 +131,56 @@ var itemlist = document.querySelector('#items'); //parentNode
 // itemlist.lastElementChild.textContent = '3 Options';
 // itemlist.lastElementChild.style.fontweight = 'Bold';
 // itemlist.lastElementChild.style.color = "darkgrey";
+
+//nextSibling
+// console.log(itemlist.nextSibling);
+//nextElementSibling
+// console.log(itemlist.nextElementSibling);
+
+//previousSibling
+//console.log(itemlist.previousSibling);
+//previousElementSibling
+// console.log(itemlist.previousElementSibling);
+// itemlist.previousElementSibling.style.color = "darkgreen";
+
+//createElement
+
+//create a div
+var newDiv = document.createElement('div');
+
+//add className
+newDiv.className = ('Hello');
+
+//add id
+newDiv.id = ('Hello1');
+
+//add attr
+newDiv.setAttribute('title', 'Hello Div');
+
+//create a text node
+var newDivText = document.createTextNode('Hello World');
+
+//add text to div
+newDiv.appendChild(newDivText);
+
+//insert newDiv to Dome
+var container = document.querySelector('header .container');
+var h1 = document.querySelector('header h1');
+
+console.log(newDiv);
+
+newDiv.style.fontSize = '30px';
+
+container.insertBefore(newDiv, h1);
+
+
+
+
+
+
+
+
+
 
 
 
